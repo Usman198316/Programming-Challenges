@@ -16,6 +16,26 @@ public class Calculator {
         return answer;
     }
 
+    private static double square(double a){
+        double answer = Math.pow(a, 2);
+        return answer;
+    }
+
+    private static double cube(double a){
+        double answer = Math.pow(a, 3);
+        return answer;
+    }
+
+    private static double pow(double a, double b){
+        double answer = Math.pow(a, b);
+        return answer;
+    }
+
+    private static double factorial(double a){
+        double answer = 1;
+        for(int i = 1; i <= a; answer *= i++);
+        return answer;
+    }
 
 
     public static void main(String[] args){
@@ -40,10 +60,25 @@ public class Calculator {
                 double divided = division(value1, value2);
                 System.out.println(divided);
                 break;
+            case "square":
+                double squared = square(value1);
+                System.out.println(squared);
+                break;
+            case "cube":
+                double cubed = cube(value1);
+                System.out.println(cubed);
+                break;
+            case "power":
+                double powerOf = pow(value1, value2);
+                System.out.println(powerOf);
+                break;
+            case "factorial":
+                double fact = factorial(value1);
+                System.out.println(fact);
+                break;
         }
 
 
 
     }
 }
-

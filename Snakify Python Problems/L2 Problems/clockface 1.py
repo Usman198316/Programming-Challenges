@@ -1,0 +1,5 @@
+h = int(input("Enter the number of hours that has passed since midnight"))
+m = int(input("Enter the number of minutes of the hour"))
+s = int(input("Enter the number of seconds of the minute"))
+totaldegrees = (h*30)+(m*0.5)+ (s*0.00833333333)
+print(totaldegrees)
